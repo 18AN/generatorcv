@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js" defer></script>
+    <title>CV Generator</title>
+</head>
+<body>
+    <div class="root">
+        <div class="forms" id="forms">
+            <form class="form" name="header">
+                <input type="text" name="name"  placeholder="Введите имя" class="form__input text">
+                <input type="text" name="surname"  placeholder="Введите фамилию" class="form__input text">
+                <input type="text" name="patronymic"  placeholder="Введите отчество" class="form__input text">
+                <input type="text" name="year"  placeholder="Введите год рождения" class="form__input year">
+                <input type="tel" name="tel"  placeholder="Введите номер телефона" class="form__input tel">
+                <input type="text" name="email"  placeholder="Введите почту" class="form__input email">
+                <input type="file" name="file" >
+                <button type="submit" class="form__submit">Создать</button>
+            </form>
+            <form class="main-form" name="main">
+                <input type="text" name="header"  placeholder="Введите имя блока" class="form__input text">
+                <input type="text" name="heading"  placeholder="Введите заголовок" class="form__input text">
+                <textarea name="value"   placeholder="Введите описание"></textarea>
+                <button type="submit" class="main-form__button">Добавить блок</button>
+            </form>
+            <form name="edit" class="section__form">
+                <input type="text" name="target"  placeholder="Имя дополняемого блока" class="form__input text">
+                <input type="text" name="name"  placeholder="Заголовок" class="form__input text">
+                <textarea name="value"></textarea>
+                <button type="submit" class="form__submit">Добавить</button>
+            </form>
+        </div>
+        <div class="cv">
+            <header class="header">
+                <div class="header__info">
+                    <h1 id="name"></h1>
+                    <p id="year" class="year"></p>
+                    <p id="tel" class="tel"></p>
+                    <p id="email" class="email"></p>
+                </div>
+                <div id="image" class="header__image"></div>
+            </header>
+            <main class="main" id="main"></main>
+        </div>
+    </div>
+</body>
+</html>
