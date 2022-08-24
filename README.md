@@ -1,2 +1,2 @@
 # generatorcv
-### Site is available here:
+### Site is available here: https://18an.github.io/generatorcv/
